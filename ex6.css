@@ -1,0 +1,41 @@
+header
+{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    grid-area: header;
+}
+
+.sec1
+{
+    background-color: yellow;
+    display: block;
+    margin-top: -1%;
+    padding: 1%;
+}
+.sec2
+{
+    display: flex;
+    justify-content: space-around;
+}
+.sec5
+{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav main aside";
+}
+main
+{
+    background-color: purple;
+}
+aside
+{
+    background-color: lightgreen;
+}
+footer
+{
+    background-color: darkgreen;
+}

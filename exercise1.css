@@ -1,0 +1,29 @@
+.case1 
+{
+    color: red;
+}
+.case2
+{
+    background-color: black;
+    color: white;
+    display: inline;
+}
+
+.part2 h2 
+{
+    color: green;
+}
+.part2 p
+{
+    background-color: darkred;
+    color: green;
+    display: inline;
+}
+.part3
+{
+    color: green;
+}
+.part4 > p
+{
+    color: green;
+}

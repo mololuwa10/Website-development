@@ -1,0 +1,70 @@
+body
+{
+    display: grid;
+    margin-top: -4.5%;
+}
+
+header
+{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.sec1
+{
+    background-color: yellow;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+}
+.sec2
+{
+    border: 12%;
+}
+main
+{
+    background-color: purple;
+    color: white;
+    padding-bottom: 171%;
+}
+aside
+{
+    background-color: lightgreen;
+}
+footer
+{
+    background-color: darkgreen;
+    color: white;
+}
+.shownav
+{
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+    margin-left: -5%;
+    margin-bottom: 5%;
+}
+.shownav::before
+{
+  content: '';
+  position: absolute;
+  width: 1.25em;
+  margin-top: 0.3em;
+  border-top: 0.2em solid #fff;
+}
+
+#clicked .on {display: block;}
+#clicked .off {display: none;}
+
+#clicked:target .on {display: none;}
+#clicked:target .off{display: block;}
+
+#clicked:target .sec1 {display: block;}

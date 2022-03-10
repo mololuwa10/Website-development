@@ -1,0 +1,67 @@
+body
+{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                        "main main aside"
+                        "footer footer footer";
+}
+header
+{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    grid-area: header;
+}
+.sec1
+{
+    background-color: yellow;
+    display: block;
+    grid-area: nav;
+
+}
+.sec2
+{
+    border: 12%;
+}
+main
+{
+    background-color: purple;
+    grid-area: main;
+
+}
+aside
+{
+    background-color: lightgreen;
+}
+footer
+{
+    background-color: darkgreen;
+    grid-area: footer;
+    color: white;
+}
+.sec1 ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.sec1 > ul > li {
+    position: relative;
+}
+.sec1 ul ul
+{
+    position: absolute;
+    display: none;
+    background-color: aliceblue;
+    padding: 0;
+    width: 100%;
+}
+.sec1 > ul > li:hover ul {
+    display: block;
+}
