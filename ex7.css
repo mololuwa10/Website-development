@@ -1,0 +1,38 @@
+
+header
+{
+    background-size: cover;
+    align-content: center;
+}
+
+form {
+    display: grid;
+    width: 400px;
+    grid-template-columns: auto;
+    align-items: center;
+    grid-gap: 0.5em;
+}
+.myinput {
+    border: 1px solid gray;
+    border-radius: 2em;
+}
+.submit {
+    grid-column: 1;
+    border: 10em solid black;
+    border-radius: 2em;
+}
+
+.submit:hover
+{
+    border: 1px solid black;
+}
+
+form section
+{
+    display: flex;
+    justify-content: center;
+}
+form section label
+{
+    margin-left: 2em;
+}

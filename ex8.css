@@ -1,0 +1,61 @@
+body
+{
+    background: linear-gradient(-45deg, red, blue, green, gray);
+    animation: change 10s infinite ease-in;
+}
+h2
+{
+    width: 20em;
+    height: 20em;
+    display: contents;
+    animation: move 10s infinite ease-in;
+    background-color: aquamarine;
+}
+@keyframes change {
+    0%
+    {
+        background-color: chocolate;
+    }
+    
+    25%
+    {
+        background-color: brown;
+    }
+
+    50%
+    {
+        background-color: darkgray;
+    }
+
+    100%
+    {
+        background-color: chocolate;
+    }
+}
+
+@keyframes move {
+    0%
+    {
+        transform: translate(0, 0);
+        color: white;
+    }
+    
+    25%
+    {
+        transform: translate(80vw, 0);
+        color: white;
+    }
+
+    50%
+    {
+        transform: translate(80vw, 80vh);
+        color: black;
+    }
+
+    100%
+    {
+        transform: translate(0, 80vh);
+        color: whitesmoke;
+    }
+    
+}
